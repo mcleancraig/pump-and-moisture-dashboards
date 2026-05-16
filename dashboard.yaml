@@ -41,6 +41,10 @@ views:
           entity: sensor.garden_moisture_sensor_1_firmware_version
           icon: mdi:chip
           content_info: state
+        - type: entity
+          entity: select.garden_moisture_sensor_1_cfg_fw_channel
+          icon: mdi:cellphone-arrow-down
+          content_info: state
         - type: template
           content: '{%- set v = states(''sensor.garden_moisture_sensor_1_battery_24h_change'')
             | int(none) -%}{% if v is none or v == 0 %}→0%{% elif v < 0 %}↓{{ v |
@@ -86,6 +90,10 @@ views:
           entity: sensor.garden_moisture_sensor_2_firmware_version
           icon: mdi:chip
           content_info: state
+        - type: entity
+          entity: select.garden_moisture_sensor_2_cfg_fw_channel
+          icon: mdi:cellphone-arrow-down
+          content_info: state
         - type: template
           content: '{%- set v = states(''sensor.garden_moisture_sensor_2_battery_24h_change'')
             | int(none) -%}{% if v is none or v == 0 %}→0%{% elif v < 0 %}↓{{ v |
@@ -128,6 +136,10 @@ views:
         - type: entity
           entity: sensor.garden_moisture_sensor_3_firmware_version
           icon: mdi:chip
+          content_info: state
+        - type: entity
+          entity: select.garden_moisture_sensor_3_cfg_fw_channel
+          icon: mdi:cellphone-arrow-down
           content_info: state
         - type: template
           content: '{%- set v = states(''sensor.garden_moisture_sensor_3_battery_24h_change'')
@@ -174,6 +186,10 @@ views:
           entity: sensor.garden_moisture_sensor_4_firmware_version
           icon: mdi:chip
           content_info: state
+        - type: entity
+          entity: select.garden_moisture_sensor_4_cfg_fw_channel
+          icon: mdi:cellphone-arrow-down
+          content_info: state
         - type: template
           content: '{%- set v = states(''sensor.garden_moisture_sensor_4_battery_24h_change'')
             | int(none) -%}{% if v is none or v == 0 %}→0%{% elif v < 0 %}↓{{ v |
@@ -218,6 +234,10 @@ views:
         - type: entity
           entity: sensor.garden_moisture_sensor_5_firmware_version
           icon: mdi:chip
+          content_info: state
+        - type: entity
+          entity: select.garden_moisture_sensor_5_cfg_fw_channel
+          icon: mdi:cellphone-arrow-down
           content_info: state
         - type: template
           content: '{%- set v = states(''sensor.garden_moisture_sensor_5_battery_24h_change'')
@@ -264,6 +284,10 @@ views:
           entity: sensor.garden_moisture_sensor_6_firmware_version
           icon: mdi:chip
           content_info: state
+        - type: entity
+          entity: select.garden_moisture_sensor_6_cfg_fw_channel
+          icon: mdi:cellphone-arrow-down
+          content_info: state
         - type: template
           content: '{%- set v = states(''sensor.garden_moisture_sensor_6_battery_24h_change'')
             | int(none) -%}{% if v is none or v == 0 %}→0%{% elif v < 0 %}↓{{ v |
@@ -308,6 +332,10 @@ views:
         - type: entity
           entity: sensor.garden_moisture_sensor_7_firmware_version
           icon: mdi:chip
+          content_info: state
+        - type: entity
+          entity: select.garden_moisture_sensor_7_cfg_fw_channel
+          icon: mdi:cellphone-arrow-down
           content_info: state
         - type: template
           content: '{%- set v = states(''sensor.garden_moisture_sensor_7_battery_24h_change'')
@@ -354,6 +382,10 @@ views:
           entity: sensor.garden_moisture_sensor_8_firmware_version
           icon: mdi:chip
           content_info: state
+        - type: entity
+          entity: select.garden_moisture_sensor_8_cfg_fw_channel
+          icon: mdi:cellphone-arrow-down
+          content_info: state
         - type: template
           content: '{%- set v = states(''sensor.garden_moisture_sensor_8_battery_24h_change'')
             | int(none) -%}{% if v is none or v == 0 %}→0%{% elif v < 0 %}↓{{ v |
@@ -398,6 +430,10 @@ views:
         - type: entity
           entity: sensor.garden_moisture_sensor_9_firmware_version
           icon: mdi:chip
+          content_info: state
+        - type: entity
+          entity: select.garden_moisture_sensor_9_cfg_fw_channel
+          icon: mdi:cellphone-arrow-down
           content_info: state
         - type: template
           content: '{%- set v = states(''sensor.garden_moisture_sensor_9_battery_24h_change'')
@@ -444,6 +480,10 @@ views:
           entity: sensor.garden_moisture_sensor_10_firmware_version
           icon: mdi:chip
           content_info: state
+        - type: entity
+          entity: select.garden_moisture_sensor_10_cfg_fw_channel
+          icon: mdi:cellphone-arrow-down
+          content_info: state
         - type: template
           content: '{%- set v = states(''sensor.garden_moisture_sensor_10_battery_24h_change'')
             | int(none) -%}{% if v is none or v == 0 %}→0%{% elif v < 0 %}↓{{ v |
@@ -488,6 +528,10 @@ views:
         - type: entity
           entity: sensor.garden_moisture_sensor_77_firmware_version
           icon: mdi:chip
+          content_info: state
+        - type: entity
+          entity: select.garden_moisture_sensor_77_cfg_fw_channel
+          icon: mdi:cellphone-arrow-down
           content_info: state
         - type: template
           content: '{%- set v = states(''sensor.garden_moisture_sensor_77_battery_24h_change'')
