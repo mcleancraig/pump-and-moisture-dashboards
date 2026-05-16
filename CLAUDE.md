@@ -3,8 +3,10 @@
 ## About this repo
 
 Single Lovelace dashboard (`dashboard.yaml`) combining moisture sensors and pump
-controllers. HA is in YAML mode — the Lovelace REST API is unavailable, so changes
-must be pasted into the HA raw configuration editor manually.
+controllers. After editing `dashboard.yaml`, deploy it to HA via the WebSocket API —
+see **DEPLOYMENT.md** for the script. Do not use the REST API (`/api/lovelace/config`)
+or the Cloudflare-fronted URL; both will fail. Target the local instance at
+`homeassistant.lan.candi-home.com:8123` over plain HTTP.
 
 ## Entity ID conventions
 
