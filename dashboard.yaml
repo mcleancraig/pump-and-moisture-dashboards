@@ -159,7 +159,7 @@ views:
       - type: grid
         cards:
           - type: vertical-stack
-            title: Sensor 5 (5)  # TODO: update with plant name
+            title: Office Dracaena (5)
             cards:
               - type: horizontal-stack
                 cards:
@@ -195,7 +195,7 @@ views:
       - type: grid
         cards:
           - type: vertical-stack
-            title: Sensor 6 (6)  # TODO: update with plant name
+            title: Pittisporum (6)  
             cards:
               - type: horizontal-stack
                 cards:
