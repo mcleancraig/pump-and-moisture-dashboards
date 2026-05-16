@@ -408,6 +408,36 @@ views:
                     icon: mdi:chip
                     content_info: state
 
+      - type: grid
+        column_span: 4
+        cards:
+          - type: history-graph
+            title: Battery — 48 h
+            hours_to_show: 48
+            entities:
+              - entity: sensor.garden_moisture_sensor_1_battery
+                name: Zamioculcus (1)
+              - entity: sensor.garden_moisture_sensor_2_battery
+                name: Hallway Iron Plant (2)
+              - entity: sensor.garden_moisture_sensor_3_battery
+                name: Apple Tree (3)
+              - entity: sensor.garden_moisture_sensor_4_battery
+                name: Fig Tree (4)
+              - entity: sensor.garden_moisture_sensor_5_battery
+                name: Office Dracaena (5)
+              - entity: sensor.garden_moisture_sensor_6_battery
+                name: Pittisporum (6)
+              - entity: sensor.garden_moisture_sensor_7_battery
+                name: Sensor 7
+              - entity: sensor.garden_moisture_sensor_8_battery
+                name: Sensor 8
+              - entity: sensor.garden_moisture_sensor_9_battery
+                name: Sensor 9
+              - entity: sensor.garden_moisture_sensor_10_battery
+                name: Sensor 10
+              - entity: sensor.garden_moisture_sensor_77_battery
+                name: DEV (77)
+
   # ═══════════════════════════════════════════════════════════
   #  PUMP CONTROLLERS
   #  Controllers 1 and 77.
