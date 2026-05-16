@@ -111,9 +111,8 @@ views:
                       green: 40
                       yellow: 20
                       red: 0
-              # sensor 3 registered with older autodiscovery naming — no _moisture_ in entity ID
               - type: entity
-                entity: sensor.garden_sensor_3_last_seen
+                entity: sensor.garden_moisture_sensor_3_last_seen
               - type: custom:mushroom-chips-card
                 chips:
                   - type: entity
@@ -146,9 +145,8 @@ views:
                       green: 40
                       yellow: 20
                       red: 0
-              # sensor 4 registered with older autodiscovery naming — no _moisture_ in entity ID
               - type: entity
-                entity: sensor.garden_sensor_4_last_seen
+                entity: sensor.garden_moisture_sensor_4_last_seen
                 name:
                   type: entity
               - type: custom:mushroom-chips-card
