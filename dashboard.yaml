@@ -1,547 +1,521 @@
 views:
-
-  # ═══════════════════════════════════════════════════════════
-  #  MOISTURE SENSORS
-  #  Sensors 1–10 and 77.
-  #  Card titles marked "Sensor N (N)" are placeholders — update
-  #  them when the plant name is known.
-  # ═══════════════════════════════════════════════════════════
-  - type: sections
-    title: Moisture
-    icon: mdi:water
-    max_columns: 4
-    cards: []
-    show_icon_and_title: true
-    sections:
-
-      - type: grid
+- type: sections
+  title: Moisture
+  icon: mdi:water
+  max_columns: 4
+  cards: []
+  show_icon_and_title: true
+  sections:
+  - type: grid
+    cards:
+    - type: vertical-stack
+      title: Zamioculcus (1)
+      cards:
+      - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            title: Zamioculcus (1)
-            cards:
-              - type: horizontal-stack
-                cards:
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_1_moisture
-                    name:
-                      type: entity
-                    needle: false
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_1_battery
-                    name:
-                      type: entity
-                    needle: true
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-              - type: entity
-                entity: sensor.garden_moisture_sensor_1_last_seen
-                name:
-                  type: entity
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_moisture_sensor_1_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-
-      - type: grid
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_1_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_1_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+      - type: entity
+        entity: sensor.garden_moisture_sensor_1_last_seen
+        name:
+          type: entity
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_moisture_sensor_1_firmware_version
+          icon: mdi:chip
+          content_info: state
+  - type: grid
+    cards:
+    - type: vertical-stack
+      title: Hallway Iron Plant (2)
+      cards:
+      - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            title: Hallway Iron Plant (2)
-            cards:
-              - type: horizontal-stack
-                cards:
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_2_moisture
-                    name:
-                      type: entity
-                    needle: false
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_2_battery
-                    name:
-                      type: entity
-                    needle: true
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-              - type: entity
-                entity: sensor.garden_moisture_sensor_2_last_seen
-                name:
-                  type: entity
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_moisture_sensor_2_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-
-      - type: grid
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_2_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_2_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+      - type: entity
+        entity: sensor.garden_moisture_sensor_2_last_seen
+        name:
+          type: entity
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_moisture_sensor_2_firmware_version
+          icon: mdi:chip
+          content_info: state
+  - type: grid
+    cards:
+    - type: vertical-stack
+      title: Apple Tree (3)
+      cards:
+      - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            title: Apple Tree (3)
-            cards:
-              - type: horizontal-stack
-                cards:
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_3_moisture
-                    name:
-                      type: entity
-                    needle: false
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_3_battery
-                    name:
-                      type: entity
-                    needle: true
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-              - type: entity
-                entity: sensor.garden_moisture_sensor_3_last_seen
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_moisture_sensor_3_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-
-      - type: grid
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_3_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_3_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+      - type: entity
+        entity: sensor.garden_moisture_sensor_3_last_seen
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_moisture_sensor_3_firmware_version
+          icon: mdi:chip
+          content_info: state
+  - type: grid
+    cards:
+    - type: vertical-stack
+      title: Fig Tree (4)
+      cards:
+      - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            title: Fig Tree (4)
-            cards:
-              - type: horizontal-stack
-                cards:
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_4_moisture
-                    name:
-                      type: entity
-                    needle: false
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_4_battery
-                    name:
-                      type: entity
-                    needle: true
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-              - type: entity
-                entity: sensor.garden_moisture_sensor_4_last_seen
-                name:
-                  type: entity
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_moisture_sensor_4_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-
-      - type: grid
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_4_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_4_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+      - type: entity
+        entity: sensor.garden_moisture_sensor_4_last_seen
+        name:
+          type: entity
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_moisture_sensor_4_firmware_version
+          icon: mdi:chip
+          content_info: state
+  - type: grid
+    cards:
+    - type: vertical-stack
+      title: Office Dracaena (5)
+      cards:
+      - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            title: Office Dracaena (5)
-            cards:
-              - type: horizontal-stack
-                cards:
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_5_moisture
-                    name:
-                      type: entity
-                    needle: false
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_5_battery
-                    name:
-                      type: entity
-                    needle: true
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-              - type: entity
-                entity: sensor.garden_moisture_sensor_5_last_seen
-                name:
-                  type: entity
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_moisture_sensor_5_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-
-      - type: grid
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_5_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_5_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+      - type: entity
+        entity: sensor.garden_moisture_sensor_5_last_seen
+        name:
+          type: entity
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_moisture_sensor_5_firmware_version
+          icon: mdi:chip
+          content_info: state
+  - type: grid
+    cards:
+    - type: vertical-stack
+      title: Pittisporum (6)
+      cards:
+      - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            title: Pittisporum (6)  
-            cards:
-              - type: horizontal-stack
-                cards:
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_6_moisture
-                    name:
-                      type: entity
-                    needle: false
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_6_battery
-                    name:
-                      type: entity
-                    needle: true
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-              - type: entity
-                entity: sensor.garden_moisture_sensor_6_last_seen
-                name:
-                  type: entity
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_moisture_sensor_6_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-
-      - type: grid
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_6_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_6_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+      - type: entity
+        entity: sensor.garden_moisture_sensor_6_last_seen
+        name:
+          type: entity
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_moisture_sensor_6_firmware_version
+          icon: mdi:chip
+          content_info: state
+  - type: grid
+    cards:
+    - type: vertical-stack
+      title: Sensor 7 (7)
+      cards:
+      - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            title: Sensor 7 (7)  # TODO: update with plant name
-            cards:
-              - type: horizontal-stack
-                cards:
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_7_moisture
-                    name:
-                      type: entity
-                    needle: false
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_7_battery
-                    name:
-                      type: entity
-                    needle: true
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-              - type: entity
-                entity: sensor.garden_moisture_sensor_7_last_seen
-                name:
-                  type: entity
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_moisture_sensor_7_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-
-      - type: grid
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_7_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_7_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+      - type: entity
+        entity: sensor.garden_moisture_sensor_7_last_seen
+        name:
+          type: entity
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_moisture_sensor_7_firmware_version
+          icon: mdi:chip
+          content_info: state
+  - type: grid
+    cards:
+    - type: vertical-stack
+      title: Sensor 8 (8)
+      cards:
+      - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            title: Sensor 8 (8)  # TODO: update with plant name
-            cards:
-              - type: horizontal-stack
-                cards:
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_8_moisture
-                    name:
-                      type: entity
-                    needle: false
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_8_battery
-                    name:
-                      type: entity
-                    needle: true
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-              - type: entity
-                entity: sensor.garden_moisture_sensor_8_last_seen
-                name:
-                  type: entity
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_moisture_sensor_8_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-
-      - type: grid
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_8_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_8_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+      - type: entity
+        entity: sensor.garden_moisture_sensor_8_last_seen
+        name:
+          type: entity
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_moisture_sensor_8_firmware_version
+          icon: mdi:chip
+          content_info: state
+  - type: grid
+    cards:
+    - type: vertical-stack
+      title: Sensor 9 (9)
+      cards:
+      - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            title: Sensor 9 (9)  # TODO: update with plant name
-            cards:
-              - type: horizontal-stack
-                cards:
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_9_moisture
-                    name:
-                      type: entity
-                    needle: false
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_9_battery
-                    name:
-                      type: entity
-                    needle: true
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-              - type: entity
-                entity: sensor.garden_moisture_sensor_9_last_seen
-                name:
-                  type: entity
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_moisture_sensor_9_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-
-      - type: grid
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_9_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_9_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+      - type: entity
+        entity: sensor.garden_moisture_sensor_9_last_seen
+        name:
+          type: entity
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_moisture_sensor_9_firmware_version
+          icon: mdi:chip
+          content_info: state
+  - type: grid
+    cards:
+    - type: vertical-stack
+      title: Sensor 10 (10)
+      cards:
+      - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            title: Sensor 10 (10)  # TODO: update with plant name
-            cards:
-              - type: horizontal-stack
-                cards:
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_10_moisture
-                    name:
-                      type: entity
-                    needle: false
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_10_battery
-                    name:
-                      type: entity
-                    needle: true
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-              - type: entity
-                entity: sensor.garden_moisture_sensor_10_last_seen
-                name:
-                  type: entity
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_moisture_sensor_10_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-
-      - type: grid
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_10_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_10_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+      - type: entity
+        entity: sensor.garden_moisture_sensor_10_last_seen
+        name:
+          type: entity
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_moisture_sensor_10_firmware_version
+          icon: mdi:chip
+          content_info: state
+  - type: grid
+    cards:
+    - type: vertical-stack
+      title: DEV (77)
+      cards:
+      - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            title: DEV (77)
-            cards:
-              - type: horizontal-stack
-                cards:
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_77_moisture
-                    name:
-                      type: entity
-                    needle: false
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-                  - type: gauge
-                    entity: sensor.garden_moisture_sensor_77_battery
-                    name:
-                      type: entity
-                    needle: true
-                    severity:
-                      green: 40
-                      yellow: 20
-                      red: 0
-              - type: entity
-                entity: sensor.garden_moisture_sensor_77_last_seen
-                name:
-                  type: entity
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_moisture_sensor_77_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-
-      - type: grid
-        column_span: 4
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_77_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+        - type: gauge
+          entity: sensor.garden_moisture_sensor_77_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            yellow: 20
+            red: 0
+      - type: entity
+        entity: sensor.garden_moisture_sensor_77_last_seen
+        name:
+          type: entity
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_moisture_sensor_77_firmware_version
+          icon: mdi:chip
+          content_info: state
+  - type: grid
+    column_span: 4
+    cards:
+    - type: history-graph
+      title: Battery — 48 h
+      hours_to_show: 48
+      grid_options:
+        columns: full
+      entities:
+      - entity: sensor.garden_moisture_sensor_1_battery
+        name: Zamioculcus (1)
+      - entity: sensor.garden_moisture_sensor_2_battery
+        name: Hallway Iron Plant (2)
+      - entity: sensor.garden_moisture_sensor_3_battery
+        name: Apple Tree (3)
+      - entity: sensor.garden_moisture_sensor_4_battery
+        name: Fig Tree (4)
+      - entity: sensor.garden_moisture_sensor_5_battery
+        name: Office Dracaena (5)
+      - entity: sensor.garden_moisture_sensor_6_battery
+        name: Pittisporum (6)
+      - entity: sensor.garden_moisture_sensor_7_battery
+        name: Sensor 7
+      - entity: sensor.garden_moisture_sensor_8_battery
+        name: Sensor 8
+      - entity: sensor.garden_moisture_sensor_9_battery
+        name: Sensor 9
+      - entity: sensor.garden_moisture_sensor_10_battery
+        name: Sensor 10
+      - entity: sensor.garden_moisture_sensor_77_battery
+        name: DEV (77)
+- type: sections
+  title: Pump Controller
+  icon: mdi:water-pump
+  max_columns: 4
+  cards: []
+  show_icon_and_title: true
+  sections:
+  - type: grid
+    column_span: 1
+    background:
+      color: amber
+      opacity: 20
+    cards:
+    - type: vertical-stack
+      title: Garden Pump Controller (1)
+      cards:
+      - type: entity
+        entity: binary_sensor.garden_pump_controller_1_water_level
+        name: Water Level
+        state_color: true
+      - type: horizontal-stack
         cards:
-          - type: history-graph
-            title: Battery — 48 h
-            hours_to_show: 48
-            entities:
-              - entity: sensor.garden_moisture_sensor_1_battery
-                name: Zamioculcus (1)
-              - entity: sensor.garden_moisture_sensor_2_battery
-                name: Hallway Iron Plant (2)
-              - entity: sensor.garden_moisture_sensor_3_battery
-                name: Apple Tree (3)
-              - entity: sensor.garden_moisture_sensor_4_battery
-                name: Fig Tree (4)
-              - entity: sensor.garden_moisture_sensor_5_battery
-                name: Office Dracaena (5)
-              - entity: sensor.garden_moisture_sensor_6_battery
-                name: Pittisporum (6)
-              - entity: sensor.garden_moisture_sensor_7_battery
-                name: Sensor 7
-              - entity: sensor.garden_moisture_sensor_8_battery
-                name: Sensor 8
-              - entity: sensor.garden_moisture_sensor_9_battery
-                name: Sensor 9
-              - entity: sensor.garden_moisture_sensor_10_battery
-                name: Sensor 10
-              - entity: sensor.garden_moisture_sensor_77_battery
-                name: DEV (77)
-
-  # ═══════════════════════════════════════════════════════════
-  #  PUMP CONTROLLERS
-  #  Controllers 1 and 77.
-  #  Pump 2 / Pump 3 buttons will show unavailable until the
-  #  controller is configured with additional pumps.
-  # ═══════════════════════════════════════════════════════════
-  - type: sections
-    title: Pump Controller
-    icon: mdi:water-pump
-    max_columns: 4
-    cards: []
-    show_icon_and_title: true
-    sections:
-
-      - type: grid
-        column_span: 1
-        background:
-          color: amber
-          opacity: 20
+        - type: button
+          entity: switch.garden_pump_controller_1_pump_1
+          name: Pump 1
+          icon: mdi:water-pump
+          show_state: true
+          tap_action:
+            action: toggle
+        - type: button
+          entity: switch.garden_pump_controller_1_pump_2
+          name: Pump 2
+          icon: mdi:water-pump
+          show_state: true
+          tap_action:
+            action: toggle
+        - type: button
+          entity: switch.garden_pump_controller_1_pump_3
+          name: Pump 3
+          icon: mdi:water-pump
+          show_state: true
+          tap_action:
+            action: toggle
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_pump_controller_1_firmware_version
+          icon: mdi:chip
+          content_info: state
+        - type: entity
+          entity: select.garden_pump_controller_1_update_channel
+          icon: mdi:cellphone-arrow-down
+          content_info: state
+  - type: grid
+    column_span: 1
+    background:
+      color: amber
+      opacity: 20
+    cards:
+    - type: vertical-stack
+      title: DEV Pump Controller (77)
+      cards:
+      - type: entity
+        entity: binary_sensor.garden_pump_controller_77_water_level
+        name: Water Level
+        state_color: true
+      - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            title: Garden Pump Controller (1)
-            cards:
-              - type: entity
-                entity: binary_sensor.garden_pump_controller_1_water_level
-                name: Water Level
-                state_color: true
-              - type: horizontal-stack
-                cards:
-                  - type: button
-                    entity: switch.garden_pump_controller_1_pump_1
-                    name: Pump 1
-                    icon: mdi:water-pump
-                    show_state: true
-                    tap_action:
-                      action: toggle
-                  - type: button
-                    entity: switch.garden_pump_controller_1_pump_2
-                    name: Pump 2
-                    icon: mdi:water-pump
-                    show_state: true
-                    tap_action:
-                      action: toggle
-                  - type: button
-                    entity: switch.garden_pump_controller_1_pump_3
-                    name: Pump 3
-                    icon: mdi:water-pump
-                    show_state: true
-                    tap_action:
-                      action: toggle
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_pump_controller_1_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-                  - type: entity
-                    entity: select.garden_pump_controller_1_update_channel
-                    icon: mdi:cellphone-arrow-down
-                    content_info: state
-
-      - type: grid
-        column_span: 1
-        background:
-          color: amber
-          opacity: 20
-        cards:
-          - type: vertical-stack
-            title: DEV Pump Controller (77)
-            cards:
-              - type: entity
-                entity: binary_sensor.garden_pump_controller_77_water_level
-                name: Water Level
-                state_color: true
-              - type: horizontal-stack
-                cards:
-                  - type: button
-                    entity: switch.garden_pump_controller_77_pump_1
-                    name: Pump 1
-                    icon: mdi:water-pump
-                    show_state: true
-                    tap_action:
-                      action: toggle
-                  - type: button
-                    entity: switch.garden_pump_controller_77_pump_2
-                    name: Pump 2
-                    icon: mdi:water-pump
-                    show_state: true
-                    tap_action:
-                      action: toggle
-                  - type: button
-                    entity: switch.garden_pump_controller_77_pump_3
-                    name: Pump 3
-                    icon: mdi:water-pump
-                    show_state: true
-                    tap_action:
-                      action: toggle
-              - type: custom:mushroom-chips-card
-                chips:
-                  - type: entity
-                    entity: sensor.garden_pump_controller_77_firmware_version
-                    icon: mdi:chip
-                    content_info: state
-                  - type: entity
-                    entity: select.garden_pump_controller_77_update_channel
-                    icon: mdi:cellphone-arrow-down
-                    content_info: state
+        - type: button
+          entity: switch.garden_pump_controller_77_pump_1
+          name: Pump 1
+          icon: mdi:water-pump
+          show_state: true
+          tap_action:
+            action: toggle
+        - type: button
+          entity: switch.garden_pump_controller_77_pump_2
+          name: Pump 2
+          icon: mdi:water-pump
+          show_state: true
+          tap_action:
+            action: toggle
+        - type: button
+          entity: switch.garden_pump_controller_77_pump_3
+          name: Pump 3
+          icon: mdi:water-pump
+          show_state: true
+          tap_action:
+            action: toggle
+      - type: custom:mushroom-chips-card
+        chips:
+        - type: entity
+          entity: sensor.garden_pump_controller_77_firmware_version
+          icon: mdi:chip
+          content_info: state
+        - type: entity
+          entity: select.garden_pump_controller_77_update_channel
+          icon: mdi:cellphone-arrow-down
+          content_info: state
