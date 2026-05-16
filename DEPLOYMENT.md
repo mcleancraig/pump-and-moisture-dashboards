@@ -46,7 +46,21 @@ asyncio.run(main())
 ```
 
 Run from the repo root. A `"success": true` response means the dashboard updated
-immediately — no HA restart needed.
+immediately — no HA restart needed, changes appear live in the browser.
+
+### Fetching the current live config
+
+Replace `lovelace/config/save` with `lovelace/config` (no body changes needed) to
+read the current dashboard back from HA. Useful for syncing after manual edits in the UI.
+
+### Full-width cards in a sections view
+
+To make a card span the full width of a sections-view dashboard, you need **both**:
+
+1. `column_span: 4` on the enclosing `type: grid` section (matches `max_columns`)
+2. `grid_options: {columns: full}` on the card itself
+
+Either one alone is not enough.
 
 ### Listing all dashboards (useful for finding url_path)
 
