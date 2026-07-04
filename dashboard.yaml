@@ -341,7 +341,7 @@ views:
             %}green{% endif %}'
           type: template
         type: custom:mushroom-chips-card
-      title: Sensor 7 (7)
+      title: Jasmine (7)
       type: vertical-stack
     type: grid
   - cards:
@@ -390,7 +390,7 @@ views:
             %}green{% endif %}'
           type: template
         type: custom:mushroom-chips-card
-      title: Sensor 8 (8)
+      title: Hebe (8)
       type: vertical-stack
     type: grid
   - cards:
@@ -439,7 +439,7 @@ views:
             %}green{% endif %}'
           type: template
         type: custom:mushroom-chips-card
-      title: Sensor 9 (9)
+      title: Lilly (9)
       type: vertical-stack
     type: grid
   - cards:
@@ -488,7 +488,154 @@ views:
             %}green{% endif %}'
           type: template
         type: custom:mushroom-chips-card
-      title: Sensor 10 (10)
+      title: Spider Plant (10)
+      type: vertical-stack
+    type: grid
+  - cards:
+    - cards:
+      - cards:
+        - entity: sensor.garden_moisture_sensor_11_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            red: 0
+            yellow: 20
+          type: gauge
+        - entity: sensor.garden_moisture_sensor_11_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            red: 0
+            yellow: 20
+          type: gauge
+        type: horizontal-stack
+      - entity: sensor.garden_moisture_sensor_11_last_seen
+        name:
+          type: entity
+        type: entity
+      - chips:
+        - content_info: state
+          entity: sensor.garden_moisture_sensor_11_firmware_version
+          icon: mdi:chip
+          type: entity
+        - content_info: state
+          entity: select.garden_moisture_sensor_11_update_channel
+          icon: mdi:cellphone-arrow-down
+          type: entity
+        - content: '{%- set v = states(''sensor.garden_moisture_sensor_11_battery_24h_change'')
+            | int(none) -%}{% if v is none or v == 0 %}→0%{% elif v < 0 %}↓{{ v |
+            abs }}%{% else %}↑{{ v }}%{% endif %}'
+          icon: '{%- set v = states(''sensor.garden_moisture_sensor_11_battery_24h_change'')
+            | int(none) -%}{% if v is none or v == 0 %}mdi:battery-clock{% elif v
+            < 0 %}mdi:trending-down{% else %}mdi:trending-up{% endif %}'
+          icon_color: '{%- set v = states(''sensor.garden_moisture_sensor_11_battery_24h_change'')
+            | int(none) -%}{% if v is none or v == 0 %}grey{% elif v < 0 %}red{% else
+            %}green{% endif %}'
+          type: template
+        type: custom:mushroom-chips-card
+      title: Philodendron (11)
+      type: vertical-stack
+    type: grid
+  - cards:
+    - cards:
+      - cards:
+        - entity: sensor.garden_moisture_sensor_12_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            red: 0
+            yellow: 20
+          type: gauge
+        - entity: sensor.garden_moisture_sensor_12_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            red: 0
+            yellow: 20
+          type: gauge
+        type: horizontal-stack
+      - entity: sensor.garden_moisture_sensor_12_last_seen
+        name:
+          type: entity
+        type: entity
+      - chips:
+        - content_info: state
+          entity: sensor.garden_moisture_sensor_12_firmware_version
+          icon: mdi:chip
+          type: entity
+        - content_info: state
+          entity: select.garden_moisture_sensor_12_update_channel
+          icon: mdi:cellphone-arrow-down
+          type: entity
+        - content: '{%- set v = states(''sensor.garden_moisture_sensor_12_battery_24h_change'')
+            | int(none) -%}{% if v is none or v == 0 %}→0%{% elif v < 0 %}↓{{ v |
+            abs }}%{% else %}↑{{ v }}%{% endif %}'
+          icon: '{%- set v = states(''sensor.garden_moisture_sensor_12_battery_24h_change'')
+            | int(none) -%}{% if v is none or v == 0 %}mdi:battery-clock{% elif v
+            < 0 %}mdi:trending-down{% else %}mdi:trending-up{% endif %}'
+          icon_color: '{%- set v = states(''sensor.garden_moisture_sensor_12_battery_24h_change'')
+            | int(none) -%}{% if v is none or v == 0 %}grey{% elif v < 0 %}red{% else
+            %}green{% endif %}'
+          type: template
+        type: custom:mushroom-chips-card
+      title: Lenton Rose (12)
+      type: vertical-stack
+    type: grid
+  - cards:
+    - cards:
+      - cards:
+        - entity: sensor.garden_moisture_sensor_13_moisture
+          name:
+            type: entity
+          needle: false
+          severity:
+            green: 40
+            red: 0
+            yellow: 20
+          type: gauge
+        - entity: sensor.garden_moisture_sensor_13_battery
+          name:
+            type: entity
+          needle: true
+          severity:
+            green: 40
+            red: 0
+            yellow: 20
+          type: gauge
+        type: horizontal-stack
+      - chips:
+        - content_info: state
+          entity: sensor.garden_moisture_sensor_13_firmware_version
+          icon: mdi:chip
+          type: entity
+        - content_info: state
+          entity: select.garden_moisture_sensor_13_update_channel
+          icon: mdi:cellphone-arrow-down
+          type: entity
+        - content: '{%- set v = states(''sensor.garden_moisture_sensor_13_battery_24h_change'')
+            | int(none) -%}{% if v is none or v == 0 %}→0%{% elif v < 0 %}↓{{ v |
+            abs }}%{% else %}↑{{ v }}%{% endif %}'
+          icon: '{%- set v = states(''sensor.garden_moisture_sensor_13_battery_24h_change'')
+            | int(none) -%}{% if v is none or v == 0 %}mdi:battery-clock{% elif v
+            < 0 %}mdi:trending-down{% else %}mdi:trending-up{% endif %}'
+          icon_color: '{%- set v = states(''sensor.garden_moisture_sensor_13_battery_24h_change'')
+            | int(none) -%}{% if v is none or v == 0 %}grey{% elif v < 0 %}red{% else
+            %}green{% endif %}'
+          type: template
+        type: custom:mushroom-chips-card
+      - entity: sensor.garden_moisture_sensor_13_last_seen
+        name:
+          type: entity
+        type: entity
+      title: Beauty Star (13)
       type: vertical-stack
     type: grid
   - cards:
@@ -555,21 +702,60 @@ views:
       - entity: sensor.garden_moisture_sensor_6_battery
         name: Pittisporum (6)
       - entity: sensor.garden_moisture_sensor_7_battery
-        name: Sensor 7
+        name: Jasmine (7)
       - entity: sensor.garden_moisture_sensor_8_battery
-        name: Sensor 8
+        name: Lilly (8)
       - entity: sensor.garden_moisture_sensor_9_battery
-        name: Sensor 9
+        name: Laurel (9)
       - entity: sensor.garden_moisture_sensor_10_battery
-        name: Sensor 10
-      - entity: sensor.garden_moisture_sensor_77_battery
-        name: DEV (77)
+        name: Spider Plant (10)
+      - entity: sensor.garden_moisture_sensor_11_battery
+        name: Philodendron (11)
+      - entity: sensor.garden_moisture_sensor_12_battery
+        name: Lenton Rose (12)
       grid_options:
         columns: full
-      hours_to_show: 48
+      hours_to_show: 128
       title: Battery — 48 h
       type: history-graph
-    column_span: 4
+    column_span: 3
+    type: grid
+  - cards:
+    - apex_config:
+        legend:
+          position: bottom
+          show: true
+        plotOptions:
+          pie:
+            donut:
+              size: 60%
+      chart_type: donut
+      header:
+        show: true
+        title: Firmware Versions
+      series:
+      - data_generator: const count = Object.values(hass.states).filter(s => s.entity_id.match(/^sensor\.garden_moisture_sensor_\d+_firmware_version$/)
+          && s.state === '2.5.1').length; return [[Date.now(), count]];
+        entity: sensor.garden_moisture_sensor_1_firmware_version
+        name: 2.5.1
+      - data_generator: const count = Object.values(hass.states).filter(s => s.entity_id.match(/^sensor\.garden_moisture_sensor_\d+_firmware_version$/)
+          && s.state === '2.10.2').length; return [[Date.now(), count]];
+        entity: sensor.garden_moisture_sensor_1_firmware_version
+        name: 2.10.2
+      - data_generator: const count = Object.values(hass.states).filter(s => s.entity_id.match(/^sensor\.garden_moisture_sensor_\d+_firmware_version$/)
+          && s.state === '2.11.0').length; return [[Date.now(), count]];
+        entity: sensor.garden_moisture_sensor_1_firmware_version
+        name: 2.11.0
+      - data_generator: const count = Object.values(hass.states).filter(s => s.entity_id.match(/^sensor\.garden_moisture_sensor_\d+_firmware_version$/)
+          && s.state === '3.0.0-b03').length; return [[Date.now(), count]];
+        entity: sensor.garden_moisture_sensor_1_firmware_version
+        name: 3.0.0-b03
+      - data_generator: const count = Object.values(hass.states).filter(s => s.entity_id.match(/^sensor\.garden_moisture_sensor_\d+_firmware_version$/)
+          && s.state === '3.0.0-b04').length; return [[Date.now(), count]];
+        entity: sensor.garden_moisture_sensor_1_firmware_version
+        name: 3.0.0-b04
+      type: custom:apexcharts-card
+    column_span: 1
     type: grid
   show_icon_and_title: true
   title: Moisture
@@ -583,10 +769,17 @@ views:
       opacity: 20
     cards:
     - cards:
-      - entity: binary_sensor.garden_pump_controller_1_water_level
-        name: Water Level
-        state_color: true
-        type: entity
+      - cards:
+        - entity: binary_sensor.garden_pump_controller_1_water_level
+          name: Water Level
+          state_color: true
+          tap_action:
+            action: navigate
+            navigation_path: /config/devices/device/5509900d19c1362a4ad038b9efe9c2c7
+          type: entity
+        - entity: sensor.garden_pump_controller_1_water_level
+          type: gauge
+        type: horizontal-stack
       - cards:
         - entity: switch.garden_pump_controller_1_pump_1
           icon: mdi:water-pump
@@ -620,7 +813,7 @@ views:
           icon: mdi:cellphone-arrow-down
           type: entity
         type: custom:mushroom-chips-card
-      title: Garden Pump Controller (1)
+      title: 'Fireplace Watering '
       type: vertical-stack
     column_span: 1
     type: grid
@@ -671,5 +864,5 @@ views:
     column_span: 1
     type: grid
   show_icon_and_title: true
-  title: Pump Controller
+  title: Watering
   type: sections
