@@ -734,26 +734,21 @@ views:
         show: true
         title: Firmware Versions
       series:
-      - data_generator: const count = Object.values(hass.states).filter(s => s.entity_id.match(/^sensor\.garden_moisture_sensor_\d+_firmware_version$/)
-          && s.state === '2.5.1').length; return [[Date.now(), count]];
+      - data_generator: return [[Date.now(), Object.values(hass.states).filter(s =>
+          /^sensor\.garden_moisture_sensor_(?!(77|99)$)\d+_firmware_version$/.test(s.entity_id)
+          && /^2\.\d+\.\d+$/.test(s.state)).length]];
         entity: sensor.garden_moisture_sensor_1_firmware_version
-        name: 2.5.1
-      - data_generator: const count = Object.values(hass.states).filter(s => s.entity_id.match(/^sensor\.garden_moisture_sensor_\d+_firmware_version$/)
-          && s.state === '2.10.2').length; return [[Date.now(), count]];
+        name: 2.x Stable
+      - data_generator: return [[Date.now(), Object.values(hass.states).filter(s =>
+          /^sensor\.garden_moisture_sensor_(?!(77|99)$)\d+_firmware_version$/.test(s.entity_id)
+          && /^3\.\d+\.\d+-b\d+$/.test(s.state)).length]];
         entity: sensor.garden_moisture_sensor_1_firmware_version
-        name: 2.10.2
-      - data_generator: const count = Object.values(hass.states).filter(s => s.entity_id.match(/^sensor\.garden_moisture_sensor_\d+_firmware_version$/)
-          && s.state === '2.11.0').length; return [[Date.now(), count]];
+        name: 3.x Beta
+      - data_generator: return [[Date.now(), Object.values(hass.states).filter(s =>
+          /^sensor\.garden_moisture_sensor_(?!(77|99)$)\d+_firmware_version$/.test(s.entity_id)
+          && /^3\.\d+\.\d+$/.test(s.state) && !/-b\d+$/.test(s.state)).length]];
         entity: sensor.garden_moisture_sensor_1_firmware_version
-        name: 2.11.0
-      - data_generator: const count = Object.values(hass.states).filter(s => s.entity_id.match(/^sensor\.garden_moisture_sensor_\d+_firmware_version$/)
-          && s.state === '3.0.0-b03').length; return [[Date.now(), count]];
-        entity: sensor.garden_moisture_sensor_1_firmware_version
-        name: 3.0.0-b03
-      - data_generator: const count = Object.values(hass.states).filter(s => s.entity_id.match(/^sensor\.garden_moisture_sensor_\d+_firmware_version$/)
-          && s.state === '3.0.0-b04').length; return [[Date.now(), count]];
-        entity: sensor.garden_moisture_sensor_1_firmware_version
-        name: 3.0.0-b04
+        name: 3.x Stable
       type: custom:apexcharts-card
     column_span: 1
     type: grid
